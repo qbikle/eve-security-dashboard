@@ -55,7 +55,7 @@ Ensure you have the following installed:
 
 1. **Log Data**:
 
-   Ensure your `eve.json` file containing the security logs is available and accessible by the application. Place it in the `data` directory within the project root (or configure the path accordingly).
+   Ensure your `eve.json` file containing the security logs is available and accessible by the application. Place it in the `public` directory within the project root (or configure the path accordingly).
 
 ### Running the Application
 
