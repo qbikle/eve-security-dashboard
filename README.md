@@ -12,13 +12,12 @@ This is a security dashboard application built with Next.js 14, designed to grap
 
 - **Next.js 14**: Framework for server-rendered React applications.
 - **React**: JavaScript library for building user interfaces.
-- **Chart.js 2**: JavaScript library for creating charts.
+- **Chart.js**: JavaScript library for creating charts.
 - **React Chart.js 2**: React wrapper for Chart.js.
-- **Acternity UI**: UI framework for responsive and modern web design.
 
 ## Live Demo
 
-Check out the live demo of the security dashboard deployed on Vercel: [Security Dashboard Live](https://{your-deployment-url}.vercel.app)
+Check out the live demo of the security dashboard deployed on Vercel: [Security Dashboard Live](https://eve-security-dashboard.vercel.app/)
 
 ## Getting Started
 
