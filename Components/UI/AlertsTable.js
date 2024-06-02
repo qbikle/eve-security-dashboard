@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-export default function AlertsTable({ data }) {
+export default function AlertsTable({ data: alertsData }) {
   const [sortColumn, setSortColumn] = useState("severity");
   const [sortDirection, setSortDirection] = useState("desc");
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredData, setFilteredData] = useState(data);
+  const [filteredData, setFilteredData] = useState(alertsData);
 
   const handleSort = (column) => {
     const direction =
@@ -18,7 +18,7 @@ export default function AlertsTable({ data }) {
     const term = event.target.value.toLowerCase();
     setSearchTerm(term);
 
-    const filtered = data.filter((item) =>
+    const filtered = alertsData.filter((item) =>
       Object.values(item).some((value) =>
         value.toString().toLowerCase().includes(term)
       )

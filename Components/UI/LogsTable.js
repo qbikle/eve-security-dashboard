@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Modal from "react-modal";
 
-Modal.setAppElement("#__next"); // Adjust if your app root element has a different ID
+Modal.setAppElement("#__next");
 
-export default function LogTable({ data }) {
+export default function LogTable({ data: logsTableData }) {
   const [sortColumn, setSortColumn] = useState("severity");
   const [sortDirection, setSortDirection] = useState("desc");
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredData, setFilteredData] = useState(data);
+  const [filteredData, setFilteredData] = useState(logsTableData);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
@@ -24,7 +24,7 @@ export default function LogTable({ data }) {
     const term = event.target.value.toLowerCase();
     setSearchTerm(term);
 
-    const filtered = data.filter((item) =>
+    const filtered = logsTableData.filter((item) =>
       Object.values(item).some((value) =>
         value.toString().toLowerCase().includes(term)
       )

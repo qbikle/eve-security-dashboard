@@ -1,4 +1,3 @@
-// components/SummaryTable.js
 export default function SummaryTable({ data }) {
   return (
     <div className="flex">
