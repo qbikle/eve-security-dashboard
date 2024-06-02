@@ -31,3 +31,34 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Add these styles to your CSS file */
+
+.modal-overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.modal-overlay--after-open {
+  opacity: 1;
+}
+
+.modal-overlay--before-close {
+  opacity: 0;
+}
+
+.modal-content {
+  transform: translateY(-50px);
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  opacity: 0;
+}
+
+.modal-content--after-open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-content--before-close {
+  transform: translateY(-50px);
+  opacity: 0;
+}

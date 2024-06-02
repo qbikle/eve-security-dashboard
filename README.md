@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Security Dashboard
+
+This is a security dashboard application built with Next.js 14, designed to graph and tabulate log data from `eve.json` which contains security logs. The dashboard utilizes React Chart.js and Chart.js 2 for graph components, and Acternity UI for the landing page.
+
+## Features
+
+- **Log Data Visualization**: Graph and table representations of security log data.
+- **Responsive Design**: Uses Acternity UI for a sleek and responsive landing page.
+- **Dynamic Charts**: Interactive and dynamic charts using React Chart.js and Chart.js 2.
+
+## Technologies Used
+
+- **Next.js 14**: Framework for server-rendered React applications.
+- **React**: JavaScript library for building user interfaces.
+- **Chart.js 2**: JavaScript library for creating charts.
+- **React Chart.js 2**: React wrapper for Chart.js.
+- **Acternity UI**: UI framework for responsive and modern web design.
+
+## Live Demo
+
+Check out the live demo of the security dashboard deployed on Vercel: [Security Dashboard Live](https://{your-deployment-url}.vercel.app)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Ensure you have the following installed:
+
+- **Node.js** (v14 or later)
+- **npm** (v6 or later) or **yarn** (v1.22 or later)
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/qbikle/eve-security-dashboard.git
+   cd security-dashboard
+   ```
+
+2. **Install dependencies**:
+
+   Using npm:
+
+   ```bash
+   npm install
+   ```
+
+   Using yarn:
+
+   ```bash
+   yarn install
+   ```
+
+### Configuration
+
+1. **Log Data**:
+
+   Ensure your `eve.json` file containing the security logs is available and accessible by the application. Place it in the `data` directory within the project root (or configure the path accordingly).
+
+### Running the Application
+
+1. **Development Mode**:
+
+   To start the development server with hot reloading:
+
+   Using npm:
+
+   ```bash
+   npm run dev
+   ```
+
+   Using yarn:
+
+   ```bash
+   yarn dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+2. **Production Mode**:
+
+   To build and start the server in production mode:
+
+   Using npm:
+
+   ```bash
+   npm run build
+   npm start
+   ```
+
+   Using yarn:
+
+   ```bash
+   yarn build
+   yarn start
+   ```
+
+   The application will be available at [http://localhost:3000](http://localhost:3000).
+
+## Project Structure
+
+```
+security-dashboard/
+├── Components/       # React components for the application
+├── App/              # Next.js App
+├── public/           # Static assets also includes eve.json
+├── README.md         # Project documentation
+├── package.json      # Project metadata and dependencies
+├── next.config.js    # Next.js configuration
+└── ...               # Other configuration and utility files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Contributions are welcome! Please open an issue or submit a pull request with your improvements.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Acknowledgements
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Thanks to the contributors of Next.js, React, Chart.js, and Acternity UI for their fantastic libraries.

@@ -342,3 +342,20 @@ topSourcePortsData.labels = top20Ports;
 topSourcePortsData.datasets[0].data = top20Ports.map(
   (port) => portCounts[port]
 );
+
+const processLogTableData = (data) => {
+  return data.map((event) => ({
+    id: event.flow_id,
+    date: event.timestamp.slice(0, 10),
+    time: event.timestamp.slice(11, 19),
+    flow_id: event.flow_id,
+    event_type: event.event_type,
+    src_ip: event.src_ip,
+    dest_ip: event.dest_ip,
+    alert_action: event.alert ? event.alert.action : "N/A",
+    severity: event.alert ? event.alert.severity : "N/A",
+    fullEvent: event,
+  }));
+};
+
+export const logsTableData = processLogTableData(data);

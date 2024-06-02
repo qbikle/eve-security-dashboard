@@ -15,7 +15,9 @@ export default function Navbar() {
   return (
     <div className="flex flex-col md:h-full md:justify-start justify-center w-full md:w-64 md:border-r bg-gray-300 dark:bg-gray-950 lg:block border-b">
       <div className="flex h-16 items-center justify-between border-b-2 md:border-b px-6">
-        <div className="text-lg font-semibold text-white">Eve Security</div>
+        <Link href="/">
+          <div className="text-lg font-semibold text-white">Eve Security</div>
+        </Link>
         <div className="md:hidden">
           <button
             onClick={toggleMenu}

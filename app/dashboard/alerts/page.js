@@ -18,7 +18,7 @@ export default function Page() {
       <div className="flex-1">
         <header className="flex h-16 mx-2 mt-8 md:mt-0 items-center justify-center md:justify-between md:border-b md:rounded-none md:mx-0 rounded-lg px-6 bg-gray-900 md:dark:bg-gray-950">
           <div className="text-2xl font-semibold text-gray-800 dark:text-white">
-            Security Dashboard
+            Alerts
           </div>
           <div className="flex items-center space-x-4">
             <button className="rounded-full" size="icon" variant="ghost">
@@ -41,7 +41,6 @@ export default function Page() {
       <main className="p-6">
         <div className="p-4 bg-gray-950 min-h-screen text-white">
           <div>
-            <h1 className="text-3xl font-semibold mb-4">Alerts</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3 bg-gray-900 p-3 rounded-xl">
               {summaryAlertsData.map((item) => (
                 <div
