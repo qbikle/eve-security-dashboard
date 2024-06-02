@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function SpotlightPreview() {
   return (
-    <div className="flex w-full justify-center">
+    <div className="flex w-full justify-center p-52">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
