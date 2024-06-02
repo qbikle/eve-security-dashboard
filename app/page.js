@@ -1,4 +1,3 @@
-import { Spotlight } from "@/Components/spotlight";
 import Link from "next/link";
 
 export default function SpotlightPreview() {
