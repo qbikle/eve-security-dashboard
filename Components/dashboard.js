@@ -93,7 +93,7 @@ export function Dashboard() {
           <div className="bg-gray-900 p-4 rounded-lg mt-4">
             <h2 className="text-xl mb-2">Summary Statistics</h2>
             <h3 className="text-gray-400">Most Recent Logs</h3>
-            <div className="flex">
+            <div className="flex overflow-y-auto overflow-x-auto border-t">
               <table className="bg-gray-900 w-full text-white">
                 <thead>
                   <tr>
